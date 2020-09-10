@@ -6,42 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".OnBoardActivity">
 
-
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/view_pager"></androidx.viewpager.widget.ViewPager>
+        android:id="@+id/view_pager">
+
+    </androidx.viewpager.widget.ViewPager>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content">
+        android:paddingBottom="10dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Skip"
             android:background="@android:color/transparent"
-            android:id="@+id/btnLeft"/>
-
-
+            android:id="@+id/btnLeft"
+            android:textColor="@color/colorPrimaryDark"
+            />
 
         <LinearLayout
-            android:id="@+id/dotsLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/dots_Layout"
             android:orientation="horizontal"
             android:layout_centerInParent="true"
-            android:layout_alignParentTop="true"></LinearLayout>
+            android:layout_alignParentTop="true">
+
+        </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Next"
-            android:layout_alignParentRight="true"
             android:background="@android:color/transparent"
-            android:id="@+id/btnRight"/>
+            android:id="@+id/btnRight"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimaryDark"
+            />
 
     </RelativeLayout>
 

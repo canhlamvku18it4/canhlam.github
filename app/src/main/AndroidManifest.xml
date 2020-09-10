@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.habib.blogapp">
+    package="com.example.green_social">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,9 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".EditUserInfoActivity"></activity>
-        <activity android:name=".CommentActivity" />
-        <activity android:name=".EditPostActivity" />
+        <activity android:name=".EditPostActivity"></activity>
         <activity android:name=".AddPostActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".UserInfoActivity" />

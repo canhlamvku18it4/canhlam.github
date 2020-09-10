@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_width="match_parent"
     android:paddingLeft="50dp"
     android:paddingRight="50dp"
-    android:layout_height="match_parent">
+    android:background="@color/colorWhite">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Blog App"
+        android:text="Green Social"
+        android:fontFamily="@font/raleway_semibold"
         android:textSize="32sp"
-        android:fontFamily="@font/leckerlione_regular"
         android:textColor="@color/colorGrey"
         android:gravity="center_horizontal"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"/>
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:id="@+id/txtLayoutEmailSignUp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
-        android:layout_height="wrap_content">
-
+        android:id="@+id/txtLayoutEmailSignUp">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtEmailSignUp"
-            android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textSize="15sp"/>
-
+            android:textSize="15sp"
+            android:hint="Email"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:id="@+id/txtLayoutPasswordSignUp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
-        app:passwordToggleEnabled="true"
-        android:layout_height="wrap_content">
-
+        android:id="@+id/txtLayoutPasswordSignUp"
+        app:passwordToggleEnabled="true">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,77 +45,51 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:textSize="15sp"/>
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:id="@+id/txtLayoutConfrimSignUp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:layout_height="wrap_content">
-
+        android:id="@+id/txtLayoutConfirmSignUp"
+        app:passwordToggleEnabled="true">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtConfirmSignUp"
-            android:hint="Confirm"
+            android:hint="Confirm Password"
             android:inputType="textPassword"
             android:textSize="15sp"/>
-
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:text="Sign up"
-        android:id="@+id/btnSignUp"
         android:background="@drawable/btn_round"
         android:textColor="@color/colorWhite"
-        android:layout_marginBottom="70dp"
         android:textSize="17dp"
-        android:textAllCaps="false"/>
-
+        android:textAllCaps="false"
+        android:id="@+id/btnSignUp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have account?"
-            android:layout_marginRight="6dp"/>
-
+            android:text="Don't have an account?"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/colorGrey"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign in"
             android:textColor="@color/colorPrimary"
             android:id="@+id/txtSignIn"
-            android:layout_marginRight="6dp"/>
-
-
+            android:paddingBottom="6dp"/>
     </LinearLayout>
-
 </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

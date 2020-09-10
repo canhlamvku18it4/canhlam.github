@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorWhite">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Blog App"
+        android:text="Green Social"
         android:textSize="32sp"
         android:gravity="center_horizontal"
         android:layout_centerInParent="true"
-        android:fontFamily="@font/leckerlione_regular"/>
+        android:fontFamily="@font/raleway_semibold"
+        android:textColor="@color/colorPrimaryDark"/>
 
 </RelativeLayout>

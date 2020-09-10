@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:clickable="true"
     android:focusable="true"
@@ -7,9 +8,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,16 +28,14 @@
                 android:layout_weight="1"
                 android:paddingLeft="6dp"
                 android:orientation="vertical">
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
                     android:id="@+id/txtPostName"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textStyle="bold"
-                    android:text="Habib Mhamadi"/>
-
+                    android:text="Bai viet so 1"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -44,8 +43,6 @@
                     android:id="@+id/txtPostDate"
                     android:textColor="@color/colorLightGrey"
                     android:text="Jun 13"/>
-
-
             </LinearLayout>
 
             <ImageButton
@@ -57,27 +54,24 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/ic_more_vert_black_24dp"/>
 
-
         </LinearLayout>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:id="@+id/txtPostDesc"
             android:textColor="@color/colorGrey"
+            android:text="Hello everyone"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:paddingBottom="8dp"
-            android:text="sdkfljsdkfjklsdjflksd"/>
-
+            android:paddingBottom="8dp"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:id="@+id/imgPostPhoto"
             android:src="@color/colorLightGrey"/>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -86,16 +80,14 @@
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="12dp"
             android:layout_marginTop="12dp">
-
-
+            
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnPostLike"
-                android:layout_marginRight="12dp"
-                android:src="@drawable/ic_favorite_outline"
-                android:background="@android:color/transparent"/>
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPostLike"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            android:background="@android:color/transparent"/>
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -104,9 +96,7 @@
                 android:src="@drawable/ic_comment"
                 android:background="@android:color/transparent"/>
 
-
         </LinearLayout>
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -117,25 +107,22 @@
             android:layout_marginLeft="12dp"
             android:textSize="13sp"
             android:textColor="@color/colorGrey"/>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View all 3 comments"
+            android:text="View all 3 comments "
             android:id="@+id/txtPostComments"
-            android:layout_marginTop="4dp"
             android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
             android:layout_marginBottom="20dp"
             android:textSize="12sp"
             android:textColor="@color/colorLightGrey"/>
-
+        
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:background="#ccc"/>
-
-
+        
     </LinearLayout>
-
 
 </androidx.cardview.widget.CardView>
